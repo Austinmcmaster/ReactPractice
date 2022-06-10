@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import {useState, useEffect} from 'react'
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -87,6 +88,7 @@ const toggleReminder = async (id) => {
       (<Tasks tasks = {tasks} onDelete = {deleteTask}
       onToggle = {toggleReminder} />) 
       : ("No task to show.")}
+      <Footer/>
     </div>
   );
 }
