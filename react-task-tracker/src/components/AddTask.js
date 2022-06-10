@@ -7,7 +7,7 @@ const AddTask = ({onAdd}) => {
     const [day, setDay] = useState('')
     const [reminder, setReminder] = useState(false)
 
-    const onSumbit = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault()
 
         if(!text) {
@@ -22,7 +22,7 @@ const AddTask = ({onAdd}) => {
     }
 
   return (
-    <form className = 'add-form' onSumbit = {onSumbit}>
+    <form className = 'add-form' onSubmit = {onSubmit}>
         <div className = 'form-control'>
             <label>Task</label>
             <input type = 'text' placeholder = 'Add Task' 
